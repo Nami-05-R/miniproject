@@ -591,7 +591,12 @@ def show_session_results(session_results):
     st.subheader("Session Map")
     session_map = build_issue_map(session_df)
     if session_map is not None:
-        st_folium(session_map, width=1100, height=500)
+        st_folium(
+            session_map,
+            width=1100,
+            height=500,
+            key=f"session_map_{len(session_records)}",
+        )
     else:
         st.info("Map is unavailable because the session records do not contain valid coordinates.")
 
@@ -984,7 +989,12 @@ with tabs[2]:
         st.subheader("Unified Issue Map")
         history_map = build_issue_map(refreshed_history_df)
         if history_map is not None:
-            st_folium(history_map, width=1100, height=500)
+            st_folium(
+                history_map,
+                width=1100,
+                height=500,
+                key=f"history_map_{len(refreshed_history_df)}",
+            )
 
         hotspot_df = build_hotspot_dataframe(refreshed_history_df.to_dict("records"))
         if not hotspot_df.empty:
