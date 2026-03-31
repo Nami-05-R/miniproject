@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['0']
+
+roboflow:
+  workspace: deneme-hi8tv
+  project: pothole-vy4hg
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/deneme-hi8tv/pothole-vy4hg/dataset/1

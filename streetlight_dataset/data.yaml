@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['street_light_0']
+
+roboflow:
+  workspace: sashank-s
+  project: street-light
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/sashank-s/street-light/dataset/1
