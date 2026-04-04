@@ -1,6 +1,5 @@
 streamlit==1.54.0
-ultralytics==8.4.14
-opencv-python-headless>=4.10,<5
+ultralytics-opencv-headless==8.4.14
 pandas==2.3.3
 plotly==6.5.2
 Pillow==12.1.1
