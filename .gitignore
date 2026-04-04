@@ -3,8 +3,12 @@ __pycache__/
 *.pyc
 *.pyo
 *.log
+*.out.log
+*.err.log
 streamlit.log
 streamlit.err.log
+.chrome-profile/
+.edge-profile/
 road_safety_monitoring.db
 road_safety_monitoring.db-journal
 road_safety_monitoring.sqlite3
